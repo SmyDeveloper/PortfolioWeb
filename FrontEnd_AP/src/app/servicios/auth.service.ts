@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../modelo/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://smydeveloper-williams1355.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Educacion } from '../modelo/educacion';
 })
 export class EducacionService {
 
-    URL = 'http://localhost:8080/educacion/'
+    URL = 'https://smydeveloper-williams1355.koyeb.app/educacion/'
     constructor(private httpClient : HttpClient) { }
 
     public lista(): Observable<Educacion[]>{
