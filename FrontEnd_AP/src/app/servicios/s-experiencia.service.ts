@@ -8,7 +8,7 @@ import { Experiencia } from '../modelo/experiencia';
 })
 export class SExperienciaService {
 
-  expUrl = 'https://smydeveloper-williams1355.koyeb.app/explab/'
+  expUrl = 'https://smydeveloper-williams1355.koyeb.app/explab/';
 
   constructor(private httpClient: HttpClient) { }
 
