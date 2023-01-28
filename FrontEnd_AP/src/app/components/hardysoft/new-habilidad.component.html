@@ -1,0 +1,19 @@
+<div clas="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Habilidad</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombre" [(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="Porcentaje"></label>
+                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar Habilidad
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
