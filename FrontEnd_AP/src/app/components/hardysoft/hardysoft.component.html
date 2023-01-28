@@ -4,7 +4,7 @@
   <div class="col-lg-2">
     <button type="button" routerlink ="/newhabilidad" class = "btn btn-dark" *ngIf="isLogged">Nueva Habilidad</button>
   </div>
-  <div class ="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let habilidades of habilidades" >
+  <div class ="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let habilidades of habilidades" >
     <circle-progress
   [percent]="(habilidades.porcentaje)"
   [radius]="100"
@@ -16,6 +16,7 @@
   [title]="(habilidades.nombre)"
   [titleColor]="'BLACK'"
   [titleFontSize]="'2em'"
+  [showTitle]="true"
   [showSubtitle]="false"
   [outerStrokeWidth]="16"
   [innerStrokeWidth]="8"
@@ -26,11 +27,14 @@
   [lazy]="true"
   ></circle-progress>
 
-    <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/edithabilidad/{{habilidades.id}}"><td><i class="bi bi-pencil-square"></i>EDITAR</td> </button></td>
+    <div>
+      <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/edithabilidad/{{habilidades.id}}"><td><i class="bi bi-pencil-square"></i>EDITAR</td> </button></td>
                     
-    <td *ngIf="isLogged">
-      <button class="btn btn-danger" (click)="delete(habilidades.id)">
-          <i class="bi bi-trash3-fill"></i>BORRAR</button>
+      <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(habilidades.id)">
+            <i class="bi bi-trash3-fill"></i>BORRAR</button>
+    </div>
+   
 
   </div>
 </div>
