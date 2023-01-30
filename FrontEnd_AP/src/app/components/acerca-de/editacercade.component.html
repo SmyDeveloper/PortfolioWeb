@@ -18,6 +18,11 @@
                     <label for="img">Imagen</label>
                     <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (chagen)="uploadImage($event)" accept=".jpg, .jpeg, .png">
                 </div>
+
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+
+                </div>
                 <button class="btn btn-primary">
                     Editar Persona
                 </button>
