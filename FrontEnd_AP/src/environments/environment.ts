@@ -5,13 +5,13 @@
 export const environment = {
   firebase: {
     projectId: 'frontendsmy',
-    appId: '1:610368150800:web:3797228c58f4ec57121995',
+    appId: '1:610368150800:web:0c85424360628c23121995',
     storageBucket: 'frontendsmy.appspot.com',
     locationId: 'southamerica-east1',
     apiKey: 'AIzaSyC_5pr1__aiAbBypQW2d0wL8seiewOGTvM',
     authDomain: 'frontendsmy.firebaseapp.com',
     messagingSenderId: '610368150800',
-    measurementId: 'G-DF98PBZF5R',
+    measurementId: 'G-DZ1JJC3P3P',
   },
 
     production: false,
