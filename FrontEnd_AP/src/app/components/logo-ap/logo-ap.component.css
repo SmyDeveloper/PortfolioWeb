@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -5,6 +11,7 @@
 }
 .social{
     margin-right: 0.5em;
+   
 }
 #logoAP{
     width: 150px;
@@ -17,6 +24,7 @@ img{
 .btn{
     border-width: medium;
 }
+
 
 /* en vista de celular*/
 @media(max-width:575px){

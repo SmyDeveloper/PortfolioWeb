@@ -2,25 +2,35 @@
     padding: 20px;
 }
 div{
-    background-color: #a1b5cb;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     text-align: center;
 }
+
+p{
+    font-size: 20px;
+}
+
 /* etiqueta nombre*/ 
 #nombre {
     font-weight: bold;
     margin-top: 30%;
     
 }
+.ultima {
+    font-weight: bold;
+}
 
 /* Estilo de la Foto*/
 @media (min-width: 576px) {
     #foto{
-        position: absolute;
-        width: 13%;
+        
+        position:relative;
+        /* width: 13%;*/
         border-radius: 100%;
         box-shadow: 3px 3px 3px gray;
-        left: 2%;
-        top: 650px;
+       /* left: 2%;*/
+       /* top: 650px; */
+
     }
 }
 

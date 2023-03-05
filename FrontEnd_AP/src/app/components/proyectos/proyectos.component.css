@@ -1,9 +1,14 @@
 .row{
     padding: 20px;
-    background-color:#dbdede ;
+    /*background-color:#dbdede ;*/
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 .contenedor{
     width: auto;
+}
+
+a {
+    font-weight: bold;
 }
 .parte1, .parte2 {
     display: inline-block;

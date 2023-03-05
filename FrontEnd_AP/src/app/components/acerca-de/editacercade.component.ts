@@ -19,13 +19,16 @@ export class EditacercadeComponent implements OnInit{
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.personaService.detail(id).subscribe(
-      data =>{
-        this.persona = data;
-      }, err =>{
-         alert("Error al modificar");
-         this.router.navigate(['']);
-      }
-    )
+      {
+        next: data=>{
+          this.persona = data;
+      },
+        error: err=> {
+          alert("Error en actualizar datos");
+          this.router.navigate(['']);
+        }
+        
+      });
   }
 
   onUpdate(){
@@ -33,17 +36,15 @@ export class EditacercadeComponent implements OnInit{
     this.persona.img = this.imageService.url
     this.personaService.update(id, this.persona).subscribe(
       {
-        next: data =>{
-          this.router.navigate(['']);
-      
-      
+        next: data => {
+        this.router.navigate(['']);
       }, 
         error: err =>{
-        alert('Error al Acualizar los datos');
+        alert("Error en actualizar datos");
         this.router.navigate(['']);
-      }
-      }
-    )
+        }
+
+      });
   }
 
   uploadImage($event:any){

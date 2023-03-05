@@ -2,7 +2,8 @@
     padding: 20px;
 }
 div{
-    background: #aed0e7;
+    /*background: #aed0e7;*/
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 h1,h3{
     display: inline;
